@@ -31,7 +31,7 @@ jobs:
     - name: Lint amb pylint  # Realitzar l'anàlisi de codi amb pylint
       run: |
         # Atura el procés si hi ha errors de sintaxi o noms no definits
-        pylint --fail-under=1 src  # Configurat per fallar si la puntuació és inferior a 10
+        pylint --fail-under=5 src  # Configurat per fallar si la puntuació és inferior a 5
     - name: Proves amb pytest  # Executar les proves amb pytest
       run: |
-        pytest -v tests
+        pytest
