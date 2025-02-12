@@ -22,7 +22,7 @@ jobs:
     - name: Instalar dependencias de sistema para OpenGL
       run: |
         sudo apt-get update
-        sudo apt-get install -y libegl1-mesa libx11-dev libxkbfile-dev
+        sudo apt-get install -y libgl1-mesa-glx libx11-dev libxkbfile-dev
     - uses: actions/checkout@v3
     - name: Configurar Python 3.10  
       uses: actions/setup-python@v3
