@@ -34,4 +34,4 @@ jobs:
         pylint --fail-under=5 src  # Configurat per fallar si la puntuació és inferior a 5
     - name: Proves amb pytest  # Executar les proves amb pytest
       run: |
-        pytest
+        pytest -v tests/test.py
