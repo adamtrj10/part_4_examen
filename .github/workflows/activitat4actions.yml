@@ -26,7 +26,7 @@ jobs:
     - name: Instal·lar dependències  # Instal·lar les dependències necessàries
       run: |
         python -m pip install --upgrade pip
-        pip install pylint pytest pyside6
+        pip install pylint pytest pyside6 pyqt6
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint amb pylint  # Realitzar l'anàlisi de codi amb pylint
       run: |
